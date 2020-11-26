@@ -202,19 +202,6 @@
   display: none;
 }
 
-.button--square::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  width: 10px;
-  height: 14px;
-  transform: translateY(-50%);
-  border-left: 10px solid rgb(25 33 68);
-  border-bottom: 7px solid rgb(0 0 0 / 0%);
-  border-top: 7px solid rgb(0 0 0 / 0%);
-}
-
 /* Directions */
 .directions {
   position: relative;
@@ -1168,10 +1155,6 @@
   .about__btn {
     display: block;
     max-width: 275px;
-  }
-
-  .button--square::after {
-    right: 35px;
   }
 
   .directions {
