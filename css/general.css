@@ -59,6 +59,14 @@
 
 /* ------ Specification ------*/
 
+:root {
+  --general-lh: 1em;
+  --secondary-lh: 1.2em;
+  --medium-lh: 1.5em;
+  --large-lh: 1.38em;
+  --button-lh: 1.67em;
+}
+
 html {
   font-family: sans-serif;
   box-sizing: border-box;

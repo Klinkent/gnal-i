@@ -88,7 +88,7 @@
 .review__quote {
   font-size: 16px;
   font-style: normal;
-  line-height: 1.38;
+  line-height: var(--large-lh);
   color: rgb(255 255 255);
 }
 
@@ -189,7 +189,7 @@
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  line-height: 1.38;
+  line-height: var(--large-lh);
   letter-spacing: normal;
   color: rgb(255 255 255);
 }
@@ -411,10 +411,6 @@
   position: relative;
   margin-bottom: 10px;
   border-radius: 10px;
-}
-
-.level__number--big {
-  font-size: 38px;
 }
 
 .level__text {
@@ -774,7 +770,7 @@
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  line-height: 1.38;
+  line-height: var(--large-lh);
   letter-spacing: normal;
   color: rgb(68 68 68);
 }
@@ -847,7 +843,7 @@
   width: 200px;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.38;
+  line-height: var(--large-lh);
   color: rgb(255 255 255);
 }
 
@@ -984,7 +980,7 @@
 .route__address {
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.38;
+  line-height: var(--large-lh);
   color: rgb(25 33 68);
   text-transform: uppercase;
   font-style: normal;
@@ -1299,10 +1295,6 @@
   .people__tagline {
     margin: 0 360px 55px 0;
     font-size: 21px;
-  }
-
-  .level__number--big {
-    font-size: 38px;
   }
 
   .people__tagline::before {

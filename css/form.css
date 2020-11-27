@@ -18,7 +18,7 @@
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11;
+  line-height: var(--general-lh);
   color: rgb(255 255 255);
 }
 
@@ -114,7 +114,7 @@
 
 .level__text--big {
   font-size: 18px;
-  line-height: 1.22;
+  line-height: var(--general-lh);
 }
 
 .person {
@@ -156,7 +156,7 @@
 
 .person-data__level svg+p {
   margin-top: 8px;
-  line-height: 0.9;
+  line-height: var(--general-lh);
 }
 
 .person-data__image {
@@ -192,7 +192,7 @@
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
-  line-height: 1.13;
+  line-height: var(--general-lh);
   letter-spacing: normal;
   color: #1d2e5b;
   text-transform: uppercase;
@@ -207,7 +207,6 @@
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.38;
   letter-spacing: normal;
   color: #444444;
   border-radius: 10px;
@@ -310,10 +309,7 @@
   height: 57px;
   font-size: 20px;
   font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
+  line-height: var(--secondary-lh);
   text-align: center;
   color: #ffffff;
   border-radius: 4px;
@@ -326,7 +322,6 @@
 
 .transport__title {
   font-size: 0;
-  line-height: 0;
   color: transparent;
   position: absolute;
   bottom: -60px;
@@ -361,7 +356,7 @@
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
-  line-height: 1.13;
+  line-height: var(--general-lh);
   letter-spacing: normal;
   color: #1d2e5b;
   text-transform: uppercase;
@@ -371,7 +366,6 @@
 
 .vehicles-list__checkbox-indicator {
   font-size: 0;
-  line-height: 0;
   color: transparent;
 }
 
@@ -393,7 +387,7 @@
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
-  line-height: 1;
+  line-height: var(--general-lh);
   letter-spacing: normal;
   color: #1d2e5b;
 }
@@ -410,7 +404,7 @@
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
-  line-height: 1;
+  line-height: var(--general-lh);
   letter-spacing: normal;
   color: #1d2e5b;
   border-radius: 10px;
@@ -432,7 +426,7 @@
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1;
+  line-height: var(--general-lh);
   letter-spacing: normal;
   color: #1d2e5b;
 }
@@ -447,7 +441,7 @@
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1;
+  line-height: var(--general-lh);
   letter-spacing: 1.4px;
   color: #1d2e5b;
   text-transform: uppercase;
@@ -465,7 +459,7 @@
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1.29;
+  line-height: var(--secondary-lh);
   letter-spacing: 1.4px;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
@@ -497,10 +491,6 @@
   margin: 0 0 28px 0;
   font-size: 24px;
   font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #1d2e5b;
 }
 
@@ -528,7 +518,6 @@
 
 .slider-dots-list__indicator {
   font-size: 0;
-  line-height: 0;
   color: transparent;
   position: relative;
 }
@@ -627,7 +616,7 @@
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1;
+  line-height: var(--general-lh);
   letter-spacing: 1.6px;
   color: #1d2e5b;
   text-transform: uppercase;
@@ -637,7 +626,7 @@
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1;
+  line-height: var(--general-lh);
   letter-spacing: 1.6px;
   color: rgba(29, 46, 91, 0.3);
   text-transform: uppercase;
@@ -668,8 +657,6 @@
   margin-right: 4px;
   font-size: 28px;
   font-weight: 300;
-  font-style: normal;
-  line-height: 1;
   letter-spacing: 1.6px;
   color: rgba(29, 46, 91, 0.3);
   border: none;
@@ -701,7 +688,7 @@
   font-size: 15px;
   font-weight: 500;
   font-style: normal;
-  line-height: 0.9;
+  line-height: var(--general-lh);
   letter-spacing: 1.5px;
   color: #1d2e5b;
   text-align: center;
@@ -713,7 +700,7 @@
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1;
+  line-height: var(--general-lh);
   letter-spacing: 1.6px;
   color: #1d2e5b;
   text-transform: uppercase;
@@ -723,7 +710,7 @@
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1;
+  line-height: var(--general-lh);
   letter-spacing: 1.6px;
   color: rgba(29, 46, 91, 0.3);
   text-transform: uppercase;
@@ -811,7 +798,7 @@
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.29;
+  line-height: var(--secondary-lh);
   letter-spacing: normal;
   color: #444444;
 }
@@ -839,7 +826,7 @@
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.29;
+  line-height: var(--secondary-lh);
   letter-spacing: normal;
   color: #444444;
   background-color: #edeff6;
@@ -928,7 +915,7 @@
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1.29;
+  line-height: var(--secondary-lh);
   letter-spacing: 1.4px;
   color: #1d2e5b;
   text-transform: uppercase;
@@ -959,7 +946,7 @@
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1.29;
+  line-height: var(--secondary-lh);
   letter-spacing: 1.4px;
   color: #1d2e5b;
   text-transform: uppercase;
@@ -1002,7 +989,7 @@ span.country-adding__choose-country--expand+button {
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1.29;
+  line-height: var(--secondary-lh);
   letter-spacing: 1.4px;
   color: #1d2e5b;
   text-transform: uppercase;
@@ -1095,10 +1082,7 @@ span.country-adding__choose-country--expand+button {
   padding: 10px;
   font-size: 16px;
   font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
+  line-height: var(--secondary-lh);
   color: #ff0000;
   background-color: #ffefef;
   border-radius: 0 0 4px 4px;
@@ -1143,7 +1127,7 @@ span.country-adding__choose-country--expand+button {
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1;
+  line-height: var(--general-lh);
   letter-spacing: normal;
   color: #1d2e5b;
 }
@@ -1189,11 +1173,6 @@ span.country-adding__choose-country--expand+button {
   height: 220px;
   padding: 8px 14px;
   font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.38;
-  letter-spacing: normal;
   text-align: left;
   color: #444444;
   border-radius: 4px;
@@ -1204,10 +1183,6 @@ span.country-adding__choose-country--expand+button {
 
 .entertainment-list__plan::placeholder {
   font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.38;
-  letter-spacing: normal;
   color: rgba(68, 68, 68, 0.3);
 }
 
@@ -1251,7 +1226,6 @@ span.country-adding__choose-country--expand+button {
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.38;
   letter-spacing: normal;
   color: #444444;
 }
@@ -1259,7 +1233,7 @@ span.country-adding__choose-country--expand+button {
 .step__button {
   padding: 10px 20px 5px 20px;
   font-size: 17px;
-  line-height: 1.76;
+  line-height: var(--button-lh);
   text-transform: uppercase;
   text-align: center;
   border-radius: 30px;
@@ -1379,11 +1353,10 @@ span.country-adding__choose-country--expand+button {
 
 .flags-list__flag {
   display: inline-block;
-  vertical-align: middle;
-  padding: 0;
-  margin-bottom: 20px;
   width: 53px;
   height: 44px;
+  padding: 0;
+  margin-bottom: 20px;
   font-size: 0;
   color: transparent;
   border-radius: 4px;
@@ -1456,18 +1429,14 @@ span.country-adding__choose-country--expand+button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44.5px;
+  width: 45px;
   height: 42px;
-  margin-top: -1px;
-  margin-left: -1px;
   font-size: 14px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.29;
+  line-height: var(--secondary-lh);
   letter-spacing: 1.4px;
   color: #1d2e5b;
-  border: solid 1px #cbced9;
+  border: 1px solid #cbced9;
 }
 
 .alphabet__item:nth-child(5n) .alphabet__link {
@@ -1508,11 +1477,6 @@ span.country-adding__choose-country--expand+button {
 
 .countries-by-letter__link {
   font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.38;
-  letter-spacing: normal;
   color: #444444;
 }
 
@@ -1541,7 +1505,7 @@ span.country-adding__choose-country--expand+button {
     height: 92px;
     padding: 30px 35px 10px 40px;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: var(--general-lh);
   }
 
   .transport--small {
@@ -1597,9 +1561,6 @@ span.country-adding__choose-country--expand+button {
     margin: 0 0 40px 0;
     font-size: 36px;
     font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
     color: #1d2e5b;
   }
 
@@ -1799,7 +1760,7 @@ span.country-adding__choose-country--expand+button {
     width: 100%;
     padding-left: 30px;
     font-size: 18px;
-    line-height: 1.67;
+    margin-top: 5px;
     letter-spacing: 1.8px;
   }
 
@@ -1926,12 +1887,12 @@ span.country-adding__choose-country--expand+button {
     height: 142px;
     padding: 18px;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: var(--secondary-lh);
   }
 
   .entertainment-list__plan::placeholder {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: var(--secondary-lh);
   }
 
   .entertainment-list__item--error::after {
@@ -1959,7 +1920,7 @@ span.country-adding__choose-country--expand+button {
     padding-bottom: 35px;
     padding-right: 95px;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: var(--secondary-lh);
     border-bottom: 1px solid #d6d9e6;
   }
 
@@ -1984,7 +1945,7 @@ span.country-adding__choose-country--expand+button {
     width: 285px;
     height: 80px;
     font-size: 22px;
-    line-height: 1;
+    line-height: var(--general-lh);
     text-transform: none;
     text-align: left;
     border-radius: 20px;
@@ -2191,7 +2152,7 @@ span.country-adding__choose-country--expand+button {
 
   .main__header {
     font-size: 60px;
-    line-height: 1.17;
+    line-height: var(--secondary-lh);
   }
 
   .main__header::after {
@@ -2207,7 +2168,7 @@ span.country-adding__choose-country--expand+button {
 
   .countries-by-letter__link {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: var(--medium-lh);
   }
 
   .alphabet {
@@ -2462,8 +2423,6 @@ span.country-adding__choose-country--expand+button {
     padding-top: 10px;
     font-size: 20px;
     font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #000000;
@@ -2589,7 +2548,7 @@ span.country-adding__choose-country--expand+button {
     width: 144px;
     height: 72px;
     font-size: 18px;
-    line-height: 1.67;
+    line-height: var(--button-lh);
   }
 
   .month-days-list__item--first::after {
