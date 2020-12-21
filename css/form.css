@@ -45,7 +45,19 @@
   width: 71px;
   height: 48px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   transform: scale(0.5);
+  border-radius: 7px;
+  box-shadow: 0px 0px 14px -7px #ccc;
+}
+
+.country--bosnia::before {
+  background-image: url("../img/flag-bosnia.svg");
+}
+
+.country--czech::before {
+  background-image: url("../img/flag-czech.svg");
 }
 
 .country::after {
@@ -77,10 +89,10 @@
 
 .level__progress-bar {
   position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 60px;
-  height: 60px;
+  top: 0;
+  left: -3px;
+  width: 100%;
+  height: 100%;
 }
 
 .level__progress-bar--80 {
@@ -134,6 +146,11 @@
   flex-direction: column;
 }
 
+.person-data__image-wrapper picture,
+.person-data__image-wrapper img {
+  display: block;
+}
+
 .person-data__level-photo-wrapper {
   display: flex;
   justify-content: space-between;
@@ -144,14 +161,6 @@
   margin-left: 20px;
   width: 100px;
   height: 100px;
-}
-
-.person-data__level svg {
-  top: 43px;
-  left: 38px;
-  width: 70px;
-  height: 70px;
-  transform: scale(2.4);
 }
 
 .person-data__level svg+p {
@@ -935,7 +944,7 @@
   left: 0;
   width: 100%;
   height: 90%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 90%, white 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 65%, white 85%);
 }
 
 .country-adding__choose-country {
@@ -1032,8 +1041,8 @@ span.country-adding__choose-country--expand+button {
   line-height: 0;
   color: transparent;
   position: absolute;
-  right: 18px;
-  top: calc(50% - 10px);
+  right: 5px;
+  top: calc(50% - 8px);
   z-index: 1;
   width: 7px;
   height: 12px;
@@ -1046,8 +1055,13 @@ span.country-adding__choose-country--expand+button {
   cursor: pointer;
 }
 
+.country-adding--choose .country-adding__expand-btn {
+  right: 13px;
+}
+
 .country-adding:last-child .country-adding__expand-btn {
-  right: 15px;
+  top: calc(50% - 7px);
+  right: 10px;
   width: 14px;
   height: 14px;
   background-image: url("../img/qty-plus.svg");
@@ -1122,7 +1136,7 @@ span.country-adding__choose-country--expand+button {
   vertical-align: middle;
   flex-grow: 1;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-left: 10px;
   font-size: 18px;
   font-weight: 500;
@@ -1139,7 +1153,7 @@ span.country-adding__choose-country--expand+button {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, white 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 75%, white 85%);
 }
 
 .entertainment-list__country-name::before {
@@ -1171,7 +1185,7 @@ span.country-adding__choose-country--expand+button {
 .entertainment-list__plan {
   width: 220px;
   height: 220px;
-  padding: 8px 14px;
+  padding: 12px 14px;
   font-size: 16px;
   text-align: left;
   color: #444444;
@@ -1179,6 +1193,7 @@ span.country-adding__choose-country--expand+button {
   border: solid 1px #cbced9;
   background-color: #ffffff;
   resize: none;
+  line-height: var(--secondary-lh);
 }
 
 .entertainment-list__plan::placeholder {
@@ -1330,6 +1345,11 @@ span.country-adding__choose-country--expand+button {
   border: 1px solid transparent;
 }
 
+.add-country-list__item .country-adding__choose-country::before {
+  background-color: #fff;
+  border-color: #cbced9;
+}
+
 .add-country-list__item:last-child span::before {
   background-color: #edeff6;
   border-color: #cbced9;
@@ -1354,7 +1374,7 @@ span.country-adding__choose-country--expand+button {
 .flags-list__flag {
   display: inline-block;
   width: 53px;
-  height: 44px;
+  height: 42px;
   padding: 0;
   margin-bottom: 20px;
   font-size: 0;
@@ -1365,19 +1385,20 @@ span.country-adding__choose-country--expand+button {
 }
 
 .flags-list__flag::before {
-  top: -3px;
+  top: -4px;
   left: -10px;
 }
 
 .flags-list__btn-remove {
   font-size: 0;
+  padding: 0;
   color: transparent;
   position: absolute;
   top: -10px;
   right: -10px;
   z-index: 1;
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   border: none;
   border-radius: 50%;
   background-color: #edeff6;
@@ -1388,13 +1409,13 @@ span.country-adding__choose-country--expand+button {
   content: "";
   position: absolute;
   top: 50%;
-  right: 50%;
-  transform: translate(-50px, -50%);
-  width: 9px;
-  height: 9px;
+  right: 2px;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
   background-image: url("../img/small-cross.svg");
   background-repeat: no-repeat;
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 .flags-list__btn-remove:hover::before,
@@ -1808,14 +1829,18 @@ span.country-adding__choose-country--expand+button {
   }
 
   .country-adding__expand-btn {
-    right: 30px;
+    right: 20px;
     width: 9px;
     height: 17px;
   }
 
+  .country-adding--choose .country-adding__expand-btn {
+    right: 20px;
+  }
+
   .country-adding:last-child .country-adding__expand-btn {
     top: 28px;
-    right: 30px;
+    right: 20px;
     width: 17px;
     height: 17px;
   }
@@ -1865,8 +1890,8 @@ span.country-adding__choose-country--expand+button {
   }
 
   .entertainment-list__country-name::before {
-    top: 8px;
-    left: 400px;
+    top: 6px;
+    left: 120%;
     width: 15px;
     height: 15px;
   }
@@ -1887,7 +1912,6 @@ span.country-adding__choose-country--expand+button {
     height: 142px;
     padding: 18px;
     font-size: 20px;
-    line-height: var(--secondary-lh);
   }
 
   .entertainment-list__plan::placeholder {
@@ -2002,8 +2026,16 @@ span.country-adding__choose-country--expand+button {
   }
 
   .entertainment {
-    padding: 46px 45px 55px 45px;
+    padding: 46px 70px 55px 45px;
     border-radius: 30px;
+  }
+
+  .entertainment-list__item:not(:last-child) .entertainment-list__country-wrapper::after {
+    top: 20px;
+    left: calc(100% + 22px);
+    display: block;
+    width: 3px;
+    height: 270px;
   }
 
   .add-country-list {
@@ -2068,6 +2100,7 @@ span.country-adding__choose-country--expand+button {
   }
 
   .flags-list__flag::before {
+    top: -6px;
     left: 0;
     transform: scale(1);
   }
@@ -2082,12 +2115,14 @@ span.country-adding__choose-country--expand+button {
   }
 
   .flags-list__btn-remove::before {
-    top: 24px;
-    right: -5px;
+    transform: translate(0, -50%);
+    top: calc(50% - 5px);
+    right: 0;
     width: 17px;
     height: 17px;
     margin-top: 0;
     margin-right: 0;
+    opacity: 0.1;
   }
 
   .person {
@@ -2113,16 +2148,6 @@ span.country-adding__choose-country--expand+button {
   .person-data__level {
     margin-left: 0;
     margin-top: 15px;
-    width: 94px;
-    height: 94px;
-  }
-
-  .person-data__level svg {
-    transform: scale(2.25);
-  }
-
-  .person-data__level svg+p {
-    margin-top: 13px;
   }
 
   .person-data__btn {
@@ -2131,6 +2156,7 @@ span.country-adding__choose-country--expand+button {
     font-weight: 500;
     letter-spacing: 2px;
     border-radius: 10px;
+    background-color: #dfe3f0;
   }
 
   .person-data__upload-wrapper {
@@ -2235,6 +2261,10 @@ span.country-adding__choose-country--expand+button {
     color: #ffffff;
   }
 
+  .level__progress-bar {
+    left: 0;
+  }
+
   .person {
     margin: -60px 0 0 0;
   }
@@ -2286,17 +2316,12 @@ span.country-adding__choose-country--expand+button {
     right: 240px;
   }
 
-  .person-data__level svg {
-    top: 33px;
-    left: -54px;
+  .person-data__level .level__number,
+  .person-data__level .level__text {
+    margin-left: 5px;
   }
 
-  .person-data__level svg+p {
-    margin-top: 0;
-    transform: translateX(-90px);
-  }
-
-  .person-data__level svg+p+p {
+  .person-data__level {
     transform: translateX(-90px);
   }
 
@@ -2588,10 +2613,8 @@ span.country-adding__choose-country--expand+button {
     width: 100%;
   }
 
-  .country-adding__expand-btn {
-    right: 25px;
-  }
-
+  .country-adding__expand-btn,
+  .country-adding--choose .country-adding__expand-btn,
   .country-adding:last-child .country-adding__expand-btn {
     right: 25px;
   }
@@ -2605,11 +2628,7 @@ span.country-adding__choose-country--expand+button {
   }
 
   .entertainment-list__item:not(:last-child) .entertainment-list__country-wrapper::after {
-    top: 20px;
     left: 774px;
-    display: block;
-    width: 3px;
-    height: 270px;
   }
 
   .entertainment-list__plan {
@@ -2702,8 +2721,7 @@ span.country-adding__choose-country--expand+button {
   }
 
   .flags-list__btn-remove::before {
-    top: 30px;
-    right: 5px;
+    top: calc(50% + 6px);
   }
 
   .main__wrapper {

@@ -16,7 +16,7 @@
 .hero__wrapper::before {
   content: "";
   position: absolute;
-  top: 256px;
+  top: 140px;
   right: 50px;
   width: 192px;
   height: 255px;
@@ -27,7 +27,7 @@
 .hero__tagline {
   display: inline-block;
   vertical-align: middle;
-  margin: 130px 0 275px;
+  margin: 10px 0 279px;
   padding: 0 15px;
   font-size: 36px;
   text-align: center;
@@ -48,10 +48,45 @@
   margin-bottom: 65px;
 }
 
+.hero-contacts-list__item:last-child {
+  flex-grow: 1;
+}
+
 .hero-contacts-list__mail-icon,
 .hero-contacts-list__phone-icon {
+  position: relative;
   display: flex;
   align-items: center;
+  border-radius: 50%;
+}
+
+.hero-contacts-list__phone-icon {
+  background-color: rgb(255 141 48);
+}
+
+.hero-contacts-list__mail-icon {
+  background-color: rgb(255 189 48);
+}
+
+.hero-contacts-list__mail-icon::after,
+.hero-contacts-list__phone-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  background-repeat: no-repeat;
+}
+
+.hero-contacts-list__mail-icon::after {
+  height: 14px;
+  background-image: url(../img/topmenu-mail.svg);
+}
+
+.hero-contacts-list__phone-icon::after {
+  height: 18px;
+  background-image: url(../img/topmenu-phone.svg);
 }
 
 .button--no-text {
@@ -61,16 +96,12 @@
 
 .hero-contacts-list__mail,
 .hero-contacts-list__phone {
-  width: 40px;
-  height: 40px;
-}
-
-.hero-contacts-list__item:last-child {
-  flex-grow: 1;
+  width: 42px;
+  height: 42px;
 }
 
 .hero__auth-button {
-  padding: 7px 20px 5px;
+  padding: 13px 20px 10px;
 }
 
 .hero__wrapper-bottom {
@@ -303,10 +334,10 @@
 .country-description__users::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 0px;
   left: -17px;
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   background-image: url(../img/user.svg);
   background-repeat: no-repeat;
   opacity: .1;
@@ -580,6 +611,10 @@
 
 .people__online-status--offline {
   background-color: rgb(249 118 118);
+}
+
+.people__online-status--online {
+  background-color: rgb(129 227 30);
 }
 
 .people__name {
@@ -1223,6 +1258,16 @@
     transform: none;
   }
 
+  .countries-list__item:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(237 239 246 / 0%) 0%, rgb(237 239 246 / 0%) 50%, rgb(237 239 246) 100%);
+  }
+
   .country-description__name {
     font-size: 24px;
   }
@@ -1238,7 +1283,7 @@
   }
 
   .country-description__users::before {
-    top: 107px;
+    top: 102px;
     left: 30px;
     margin-top: 0;
     width: 21px;
@@ -1247,6 +1292,7 @@
   }
 
   .countries-list__item {
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
     height: 140px;
@@ -1355,10 +1401,6 @@
     left: -20px;
     width: 7px;
     height: 7px;
-  }
-
-  .people__online-status--online {
-    background-color: rgb(129 227 30);
   }
 
   .people__name {
@@ -1782,25 +1824,11 @@
   }
 
   .country-description__users::before {
-    top: 102px;
+    top: 97px;
   }
 
   .countries-list__image {
     min-width: 185px;
-  }
-
-  .countries-list__item:last-child {
-    position: relative;
-  }
-
-  .countries-list__item:last-child::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgb(237 239 246 / 0%) 0%, rgb(237 239 246 / 0%) 50%, rgb(237 239 246) 100%);
   }
 
   .directions__btn {
